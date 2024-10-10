@@ -10,3 +10,6 @@ DEVICE_MANIFEST_FILE := device/qcom/bengal_2w/manifest.xml
 # Kernel modules install path
 #KERNEL_MODULES_INSTALL := dlkm
 #KERNEL_MODULES_OUT := out/target/product/bengal_2w_v2/$(KERNEL_MODULES_INSTALL)/lib/modules
+
+# Enable I2S Feature
+PRODUCT_PROPERTY_OVERRIDES += vendor.i2s.enable=true
