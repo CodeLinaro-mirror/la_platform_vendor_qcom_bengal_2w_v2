@@ -18,3 +18,6 @@ PRODUCT_PROPERTY_OVERRIDES += vendor.i2s.enable=true
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
 PRODUCT_PROPERTY_OVERRIDES += service.adb.tcp.port = 5555
 endif
+
+# Property for SKU2
+PRODUCT_PROPERTY_OVERRIDES += vendor.sku2.enable=true
