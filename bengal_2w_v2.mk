@@ -13,3 +13,8 @@ DEVICE_MANIFEST_FILE := device/qcom/bengal_2w/manifest.xml
 
 # Enable I2S Feature
 PRODUCT_PROPERTY_OVERRIDES += vendor.i2s.enable=true
+
+#Only enable adb-over-wifi on userdebug/eng builds
+ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
+PRODUCT_PROPERTY_OVERRIDES += service.adb.tcp.port = 5555
+endif
