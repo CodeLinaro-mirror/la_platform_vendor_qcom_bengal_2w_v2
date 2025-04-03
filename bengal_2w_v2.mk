@@ -21,3 +21,18 @@ endif
 
 # Property for SKU2
 PRODUCT_PROPERTY_OVERRIDES += vendor.sku2.enable=true
+
+PRODUCT_PACKAGES += \
+    init.qcom.QCC3086.rc \
+    qccdadevd \
+    key_file \
+    nvscmd \
+    coredump \
+    libpttransport \
+    libpttoolcmd \
+    libhydprotocols \
+    libengineframework \
+    libcuratorlibrary
+
+PRODUCT_PROPERTY_OVERRIDES += persist.vendor.qccdadevd_restart=false
+
