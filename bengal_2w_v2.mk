@@ -32,7 +32,9 @@ PRODUCT_PACKAGES += \
     libpttoolcmd \
     libhydprotocols \
     libengineframework \
-    libcuratorlibrary
+    libcuratorlibrary \
+    flash_image.xuv \
+    version_info.txt
 
 PRODUCT_PROPERTY_OVERRIDES += persist.vendor.qccdadevd_restart=false
 
