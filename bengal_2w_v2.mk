@@ -40,6 +40,8 @@ PRODUCT_PACKAGES += \
     flash_image.xuv \
     version_info.txt
 
+PRODUCT_PACKAGES += qti-uart-can.ko
+
 PRODUCT_PROPERTY_OVERRIDES += persist.vendor.qccdadevd_restart=false
 
 # sensor feature
