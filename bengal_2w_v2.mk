@@ -42,6 +42,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += qti-uart-can.ko
 
+ENABLE_RVC := false
 PRODUCT_PROPERTY_OVERRIDES += persist.vendor.qccdadevd_restart=false
 
 # sensor feature
